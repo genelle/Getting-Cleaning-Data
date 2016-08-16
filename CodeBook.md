@@ -8,21 +8,7 @@ The data was sourced from [The UCI Machine Learning Repository](http://archive.i
 
 I used this data for the *Getting and Cleaning Data* Course's assignment in the Data Science Specicialization on Coursera. The objective for this assignment was to clean up the data provided by UCI and perform some calculations.
 
-##Script breakdown
-Below is a breakdown of the actions and calculations performed in my analysis. Please refer to [run_analysis](https://github.com/genelle/Getting-Cleaning-Data/blob/master/run_analysis.R) for more details. Make sure you properly set your working directory before running.
-
-1. Download datasets 
-2. Unzip datasets 
-3. Load all datasets into data frames
-4. Merged train and test datasets so the subjects, activities, and measured data were all contained in one dataset
-5. Renamed columns for readability
-6. Removed columns that were not calculating the mean or standard deviation of a measurement.
-7. Merged above dataset with a labels dataset so the activity done was easy to read
-8. Melt the dataset using the melt() function for ease of the next calculations
-9. Calculate the mean of each measurement by subject and activity and save to new dataset
-10. Write final dataset from step 9 into tidy.txt
-
-##Componenets of the tidy.txt dataset
+##Components of the outputted tidy.txt dataset
 ###Subjects
 There were 30 subjects labeled 1-30 featured in this dataset
 
