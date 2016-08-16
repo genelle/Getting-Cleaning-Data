@@ -6,9 +6,10 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 The following files are in this repository:
 
-1. [README.md](https://github.com/genelle/Getting-Cleaning-Data/blob/master/README.md - describes the assignment and the script that I wrote
+1. [README.md](https://github.com/genelle/Getting-Cleaning-Data/blob/master/README.md) - describes the assignment and the script that I wrote
 2. [CodeBook.md](https://github.com/genelle/Getting-Cleaning-Data/blob/master/CodeBook.md) - describes the study in more detail, as well as provides information on the variables used and measurements made
 3. [run_analysis.R](https://github.com/genelle/Getting-Cleaning-Data/blob/master/run_analysis.R) - the actual R script I wrote to do my analysis
+4. [tidy.txt](https://github.com/genelle/Getting-Cleaning-Data/blob/master/tidy.txt) - the resulting dataset after running the R script.
 
 ##Script breakdown
 Below is a breakdown of the actions and calculations performed in my analysis. Please refer to [run_analysis](https://github.com/genelle/Getting-Cleaning-Data/blob/master/run_analysis.R) for more details. Make sure you properly set your working directory before running.
