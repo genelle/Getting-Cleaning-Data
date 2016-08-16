@@ -23,7 +23,9 @@ There were 6 activities that each measurement was measured off of:
 6. LAYING
 
 ###Variables
-The following were the variables we cared about from the original dataset. The first two are indicating the subject and activity. The rest are different measurements made while the participants wore their trackers. 
+The following were the variables we cared about from the original dataset. The first two are indicating the subject and activity. 
+
+The rest are different measurements made while the participants wore their trackers. The resulting value in the tidy.txt dataset is the mean() calculated on each of the variables in relation to the subject and the activity.
 
 
 subjectID
