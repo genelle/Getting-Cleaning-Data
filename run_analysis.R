@@ -2,7 +2,7 @@
 library(reshape2)
 
 #Download files and unzip
-setwd("~/Data Science Coursera/Course3_Getting_Data/assignment")
+
 if (!file.exists("data")){
     dir.create("data")
 }
@@ -17,19 +17,17 @@ if (!file.exists("./data/UCI HAR Dataset")){
     unzip(zipfile = "./data/wearables.zip", exdir = "./data")
 }
 
-setwd("./data/UCI HAR Dataset")
-
 #Read in all datasets
-features <- read.table("features.txt", col.names=c("featureID","featureName"))
-activityLabels <- read.table("activity_labels.txt", col.names=c("activityID","activityName"))
+features <- read.table("./data/UCI HAR Dataset/features.txt", col.names=c("featureID","featureName"))
+activityLabels <- read.table("./data/UCI HAR Dataset/activity_labels.txt", col.names=c("activityID","activityName"))
 
-train <- read.table("./train/X_train.txt")
-trainLabels <- read.table("./train/y_train.txt")
-trainSubjects <- read.table("./train/subject_train.txt")
+train <- read.table("./data/UCI HAR Dataset/train/X_train.txt")
+trainLabels <- read.table("./data/UCI HAR Dataset/train/y_train.txt")
+trainSubjects <- read.table("./data/UCI HAR Dataset/train/subject_train.txt")
 
-test <- read.table("./test/X_test.txt")
-testLabels <- read.table("./test/y_test.txt")
-testSubjects <- read.table("./test/subject_test.txt")
+test <- read.table("./data/UCI HAR Dataset/test/X_test.txt")
+testLabels <- read.table("./data/UCI HAR Dataset/test/y_test.txt")
+testSubjects <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
 
 #Rename columns to ease merging of datasets
 featureNames <- features[,2]
@@ -60,4 +58,4 @@ allData.melted <- melt(allData.names, id = c("activityID", "activityName", "subj
 allData.mean <- dcast(allData.melted, subjectID + activityName ~ variable,mean)
 
 #write allData.mean to text file
-write.table(allData.mean, "../tidy.txt", row.names = FALSE, quote = FALSE)
+write.table(allData.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
