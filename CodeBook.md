@@ -1,12 +1,12 @@
 #Codebook for Getting and Cleaning Data assignment
 
-The following contains information on the study itself, how the data was retreived, and how the data was analyzed.
+The following contains information on the study itself, how the data was retrieved, and how the data was analyzed.
 
 ##Study Design
 The data was sourced from [The UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). Quoted from the study's website: "Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors."
 
 
-I used this data for the *Getting and Cleaning Data* Course's assignment in the Data Science Specicialization on Coursera. The objective for this assignment was to clean up the data provided by UCI and perform some calculations.
+I used this data for the *Getting and Cleaning Data* Course's assignment in the Data Science Specialization  on Coursera. The objective for this assignment was to clean up the data provided by UCI and perform some calculations.
 
 ##Components of the outputted tidy.txt dataset
 ###Subjects
